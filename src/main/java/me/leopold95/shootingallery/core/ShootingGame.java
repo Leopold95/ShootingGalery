@@ -10,4 +10,6 @@ public class ShootingGame {
 	public static void stop(){
 
 	}
+
+
 }
