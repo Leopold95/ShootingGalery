@@ -1,6 +1,7 @@
 package me.leopold95.shootingallery.commands;
 
 
+import me.leopold95.shootingallery.core.engine.ShootingGame;
 import me.leopold95.shootingallery.commands.constants.Commands;
 import me.leopold95.shootingallery.commands.handlers.TiersHandler;
 import me.leopold95.shootingallery.core.Tiers;
@@ -43,6 +44,14 @@ public class BaseCommand implements CommandExecutor {
 
 			case Commands.MY_SCORE:
 				Utils.printShootingGalleryInfo(plyer);
+				break;
+
+			case Commands.START_GAME:
+				ShootingGame.start();
+				break;
+
+			case Commands.STOP_GAME:
+				ShootingGame.stop();
 				break;
 		}
 

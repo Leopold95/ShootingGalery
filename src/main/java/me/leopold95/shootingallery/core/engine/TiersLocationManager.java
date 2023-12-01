@@ -1,5 +1,7 @@
-package me.leopold95.shootingallery.core;
+package me.leopold95.shootingallery.core.engine;
 
+import me.leopold95.shootingallery.core.Config;
+import me.leopold95.shootingallery.core.Tiers;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;

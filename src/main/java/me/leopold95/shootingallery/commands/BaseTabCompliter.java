@@ -26,6 +26,8 @@ public class BaseTabCompliter implements TabCompleter {
 			tiers.add(Commands.TIERS_FOURTH);
 			tiers.add(Commands.TIERS_FIFTH);
 			tiers.add(Commands.MY_SCORE);
+			tiers.add(Commands.START_GAME);
+			tiers.add(Commands.STOP_GAME);
 
 			return tiers;
 		}

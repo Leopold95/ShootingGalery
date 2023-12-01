@@ -13,6 +13,9 @@ public class Commands {
 	public static final String TIERS_FOURTH = "tierfourth";
 	public static final String TIERS_FIFTH = "tierfifth";
 	public static final String MY_SCORE = "myscore";
+	public static final String START_GAME = "startgame";
+	public static final String STOP_GAME = "stopgame";
+
 
 
 }

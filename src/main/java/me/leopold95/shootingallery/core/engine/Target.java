@@ -1,5 +1,7 @@
-package me.leopold95.shootingallery.core;
+package me.leopold95.shootingallery.core.engine;
 
+import me.leopold95.shootingallery.core.Globals;
+import me.leopold95.shootingallery.core.Tiers;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.ArmorStand;
@@ -8,7 +10,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.persistence.PersistentDataType;
 
 public class Target {
-	public  void spawn(Location location, Tiers tier){
+	public ArmorStand spawn(Location location, Tiers tier){
 		ArmorStand target = (ArmorStand) location.getWorld().spawnEntity(location, EntityType.ARMOR_STAND);
 		target.getEquipment().setChestplate(new ItemStack(Material.IRON_CHESTPLATE));
 		target.getPersistentDataContainer().set(Globals.TARGET_KEY, PersistentDataType.BYTE, (byte)1);
@@ -35,10 +37,10 @@ public class Target {
 				break;
 		}
 
-
+		return target;
 	}
 
-	public void move(Location from, Location to, double speed){
+	public void move(ArmorStand target, Location from, Location to, double speed){
 
 	}
 }
