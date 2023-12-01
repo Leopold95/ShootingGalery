@@ -1,0 +1,13 @@
+name: ShootingGalery
+version: '${project.version}'
+main: me.leopold95.shootinggalery.ShootingGalery
+api-version: '1.16'
+depend: []
+
+
+commands:
+  shootingallery:
+    description: Команда плагина
+    aliases:
+      - sg
+    usage: /<command> <args>
