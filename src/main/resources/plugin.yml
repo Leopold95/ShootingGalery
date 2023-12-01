@@ -1,6 +1,6 @@
 name: ShootingGalery
 version: '${project.version}'
-main: me.leopold95.shootinggalery.ShootingGalery
+main: me.leopold95.shootingallery.ShootingGallery
 api-version: '1.16'
 depend: []
 

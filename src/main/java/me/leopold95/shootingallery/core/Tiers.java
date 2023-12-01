@@ -1,4 +1,4 @@
-package me.leopold95.shootinggalery.core;
+package me.leopold95.shootingallery.core;
 
 public enum Tiers {
 	FIRST(1),

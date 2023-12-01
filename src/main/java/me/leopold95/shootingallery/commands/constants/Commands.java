@@ -1,4 +1,4 @@
-package me.leopold95.shootinggalery.commands.contants;
+package me.leopold95.shootingallery.commands.constants;
 
 public class Commands {
 	public static final String TIER_SETFROM = "setfrom";

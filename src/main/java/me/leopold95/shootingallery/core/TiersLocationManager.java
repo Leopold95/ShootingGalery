@@ -1,4 +1,4 @@
-package me.leopold95.shootinggalery.core;
+package me.leopold95.shootingallery.core;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -16,26 +16,6 @@ public class TiersLocationManager {
 				Config.getInt(parsePathX(tier, 2)) + " " +
 				Config.getInt(parsePathY(tier, 2)) + " " +
 				Config.getInt(parsePathZ(tier, 2)) + ".";
-
-
-//		StringBuilder sb1 = new StringBuilder();
-//
-//		sb1.append("Tier 1 From: ");
-//		sb1.append(Config.getInt("tier-one.pos1.x"));
-//		sb1.append(" ");
-//		sb1.append(Config.getInt("tier-one.pos1.y"));
-//		sb1.append(" ");
-//		sb1.append(Config.getInt("tier-one.pos1.z"));
-//		sb1.append(" ");
-//
-//		StringBuilder sb2 = new StringBuilder();
-//		sb2.append("Tier 1 To: ");
-//		sb2.append(Config.getInt("tier-one.pos2.x"));
-//		sb2.append(" ");
-//		sb2.append(Config.getInt("tier-one.pos2.y"));
-//		sb2.append(" ");
-//		sb2.append(Config.getInt("tier-one.pos2.z"));
-//		sb2.append(" ");
 
 
 		player.sendMessage(ss1);

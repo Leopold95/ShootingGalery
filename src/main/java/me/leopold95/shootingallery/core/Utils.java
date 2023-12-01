@@ -1,4 +1,4 @@
-package me.leopold95.shootinggalery.core;
+package me.leopold95.shootingallery.core;
 
 
 import org.bukkit.entity.Player;
@@ -10,6 +10,7 @@ public class Utils {
 		player.sendMessage("Мишеней сбито: " + getTargetsAmount(player));
 		player.sendMessage("Счет тира: " + getTargetsScore(player));
 	}
+
 	public static int getTargetsAmount(Player player){
 		return player.getPersistentDataContainer().get(Globals.HITTED_TARGETS_AMOUNT, PersistentDataType.INTEGER);
 	}

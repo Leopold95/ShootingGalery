@@ -1,7 +1,7 @@
-package me.leopold95.shootinggalery.commands;
+package me.leopold95.shootingallery.commands;
 
 
-import me.leopold95.shootinggalery.commands.contants.Commands;
+import me.leopold95.shootingallery.commands.constants.Commands;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;

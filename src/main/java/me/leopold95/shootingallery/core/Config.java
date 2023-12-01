@@ -1,7 +1,7 @@
-package me.leopold95.shootinggalery.core;
+package me.leopold95.shootingallery.core;
 
 
-import me.leopold95.shootinggalery.ShootingGalery;
+import me.leopold95.shootingallery.ShootingGallery;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -40,10 +40,10 @@ public class Config {
 	}
 
 	private static void createConfigFile(String file){
-		configFile = new File(ShootingGalery.getPlugin().getDataFolder(), file);
+		configFile = new File(ShootingGallery.getPlugin().getDataFolder(), file);
 		if(!configFile.exists()){
 			configFile.getParentFile().mkdirs();
-			ShootingGalery.getPlugin().saveResource(file, false);
+			ShootingGallery.getPlugin().saveResource(file, false);
 		}
 		cfg = new YamlConfiguration();
 		try {

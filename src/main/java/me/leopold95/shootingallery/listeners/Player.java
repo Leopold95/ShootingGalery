@@ -1,6 +1,6 @@
-package me.leopold95.shootinggalery.listeners;
+package me.leopold95.shootingallery.listeners;
 
-import me.leopold95.shootinggalery.core.Globals;
+import me.leopold95.shootingallery.core.Globals;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;

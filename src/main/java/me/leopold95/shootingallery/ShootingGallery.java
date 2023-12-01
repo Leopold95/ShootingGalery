@@ -1,17 +1,17 @@
-package me.leopold95.shootinggalery;
+package me.leopold95.shootingallery;
 
-import me.leopold95.shootinggalery.commands.BaseCommand;
-import me.leopold95.shootinggalery.commands.BaseTabCompliter;
-import me.leopold95.shootinggalery.core.Config;
-import me.leopold95.shootinggalery.listeners.ArrowHit;
-import me.leopold95.shootinggalery.listeners.Player;
+import me.leopold95.shootingallery.commands.BaseCommand;
+import me.leopold95.shootingallery.commands.BaseTabCompliter;
+import me.leopold95.shootingallery.core.Config;
+import me.leopold95.shootingallery.listeners.ArrowHit;
+import me.leopold95.shootingallery.listeners.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
  * Точка входа плагина
  */
-public final class ShootingGalery extends JavaPlugin {
-    private static ShootingGalery inst;
+public final class ShootingGallery extends JavaPlugin {
+    private static ShootingGallery inst;
 
     @Override
     public void onEnable() {
@@ -34,7 +34,7 @@ public final class ShootingGalery extends JavaPlugin {
         // Plugin shutdown logic
     }
 
-    public static ShootingGalery getPlugin(){
+    public static ShootingGallery getPlugin(){
         return inst;
     }
 }

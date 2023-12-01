@@ -1,11 +1,10 @@
-package me.leopold95.shootinggalery.commands;
+package me.leopold95.shootingallery.commands;
 
 
-import me.leopold95.shootinggalery.commands.contants.Commands;
-import me.leopold95.shootinggalery.commands.handlers.TiersHandler;
-import me.leopold95.shootinggalery.core.Tiers;
-import me.leopold95.shootinggalery.core.Utils;
-import org.bukkit.Utility;
+import me.leopold95.shootingallery.commands.constants.Commands;
+import me.leopold95.shootingallery.commands.handlers.TiersHandler;
+import me.leopold95.shootingallery.core.Tiers;
+import me.leopold95.shootingallery.core.Utils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

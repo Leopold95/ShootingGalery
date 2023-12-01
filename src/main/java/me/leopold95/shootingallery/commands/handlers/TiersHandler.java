@@ -1,9 +1,9 @@
-package me.leopold95.shootinggalery.commands.handlers;
+package me.leopold95.shootingallery.commands.handlers;
 
-import me.leopold95.shootinggalery.commands.contants.Commands;
-import me.leopold95.shootinggalery.core.Target;
-import me.leopold95.shootinggalery.core.TiersLocationManager;
-import me.leopold95.shootinggalery.core.Tiers;
+import me.leopold95.shootingallery.commands.constants.Commands;
+import me.leopold95.shootingallery.core.Target;
+import me.leopold95.shootingallery.core.TiersLocationManager;
+import me.leopold95.shootingallery.core.Tiers;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;

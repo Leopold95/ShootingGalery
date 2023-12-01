@@ -1,6 +1,6 @@
-package me.leopold95.shootinggalery.listeners;
+package me.leopold95.shootingallery.listeners;
 
-import me.leopold95.shootinggalery.core.Globals;
+import me.leopold95.shootingallery.core.Globals;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Player;
