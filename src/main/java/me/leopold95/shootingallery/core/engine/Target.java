@@ -10,8 +10,9 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.persistence.PersistentDataType;
 
 public class Target {
-	public ArmorStand spawn(Location location, Tiers tier){
+	public static ArmorStand spawn(Location location, Tiers tier){
 		ArmorStand target = (ArmorStand) location.getWorld().spawnEntity(location, EntityType.ARMOR_STAND);
+		System.out.println(location.getWorld().getName());
 		target.getEquipment().setChestplate(new ItemStack(Material.IRON_CHESTPLATE));
 		target.getPersistentDataContainer().set(Globals.TARGET_KEY, PersistentDataType.BYTE, (byte)1);
 

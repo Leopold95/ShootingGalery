@@ -1,6 +1,5 @@
 package me.leopold95.shootingallery.core;
 
-
 import org.bukkit.entity.Player;
 import org.bukkit.persistence.PersistentDataType;
 
