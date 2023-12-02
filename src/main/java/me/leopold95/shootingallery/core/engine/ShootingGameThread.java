@@ -8,10 +8,10 @@ public class ShootingGameThread extends BukkitRunnable {
 	public void run() {
 		ShootingGame.updateGame();
 
-		ShootingGame.makeTierOneMove(Tiers.FIRST);
-		ShootingGame.makeTierOneMove(Tiers.SECOND);
-		ShootingGame.makeTierOneMove(Tiers.THIRD);
-		ShootingGame.makeTierOneMove(Tiers.FOURTH);
-		ShootingGame.makeTierOneMove(Tiers.FIFTH);
+		ShootingGame.trySpawnTarget(Tiers.FIRST);
+		ShootingGame.trySpawnTarget(Tiers.SECOND);
+		ShootingGame.trySpawnTarget(Tiers.THIRD);
+		ShootingGame.trySpawnTarget(Tiers.FOURTH);
+		ShootingGame.trySpawnTarget(Tiers.FIFTH);
 	}
 }

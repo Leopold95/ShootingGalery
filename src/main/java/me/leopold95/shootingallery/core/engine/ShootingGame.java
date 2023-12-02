@@ -5,15 +5,11 @@ import me.leopold95.shootingallery.core.Globals;
 import me.leopold95.shootingallery.core.engine.tiers.TierPosition;
 import me.leopold95.shootingallery.core.engine.tiers.Tiers;
 import me.leopold95.shootingallery.core.engine.tiers.TiersLocationManager;
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.ArmorStand;
-import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.util.Vector;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -58,15 +54,14 @@ public class ShootingGame {
 		//rome all alive targets
 		for (Tiers tier : aliveTargets.keySet()) {
 			ArmorStand target = aliveTargets.get(tier);
-
 			target.remove();
-
 			aliveTargets.remove(tier, target);
 		}
 	}
 
 
 	public static void updateGame(){
+		//удалить сбитые мешени из списка живыъ мешеней
 		for (Tiers tier : aliveTargets.keySet()) {
 			ArmorStand target = aliveTargets.get(tier);
 
@@ -79,7 +74,7 @@ public class ShootingGame {
 
 	}
 
-	public static void makeTierOneMove(Tiers tierToSpawn){
+	public static void trySpawnTarget(Tiers tierToSpawn){
 		Location loc = TiersLocationManager.getSpawnLocation(tierToSpawn, TierPosition.FROM);
 
 		if(!aliveTargets.containsKey(tierToSpawn))
