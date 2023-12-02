@@ -5,7 +5,7 @@ import org.bukkit.NamespacedKey;
 
 public class Globals {
 	public static final double TargetMovementSpeed = 1.0;
-	public static final int GameThreadUpdateDelay = 20; //ticks
+	public static final int GameThreadUpdateDelay = 15; //ticks
 	public static String OVERWORLD_NAME = "world";
 	public static final NamespacedKey BOW_KEY = new NamespacedKey(ShootingGallery.getPlugin(), "shooting-bow");
 	public static final NamespacedKey HITTED_TARGETS_AMOUNT = new NamespacedKey(ShootingGallery.getPlugin(), "targets-hitted-amount");

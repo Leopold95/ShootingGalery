@@ -1,7 +1,9 @@
-package me.leopold95.shootingallery.core.engine;
+package me.leopold95.shootingallery.core.engine.tiers;
 
 import me.leopold95.shootingallery.core.Config;
-import me.leopold95.shootingallery.core.Tiers;
+import me.leopold95.shootingallery.core.Globals;
+import me.leopold95.shootingallery.core.engine.tiers.Tiers;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
@@ -38,14 +40,23 @@ public class TiersLocationManager {
 		);
 	}
 
+	public static Location getSpawnLocation(Tiers tier, TierPosition pos){
+		return new Location(
+				Bukkit.getWorld(Globals.OVERWORLD_NAME),
+				Config.getInt(parsePathX(tier, pos.getPos())),
+				Config.getInt(parsePathY(tier, pos.getPos())),
+				Config.getInt(parsePathZ(tier, pos.getPos()))
+		);
+	}
 
-	private String parsePathX(Tiers tier, int poseNum){
+
+	private static String parsePathX(Tiers tier, int poseNum){
 		return "tier-" + tier.getNum()+ ".pos"+ poseNum+".x";
 	}
-	private String parsePathY(Tiers tier, int poseNum){
+	private static String parsePathY(Tiers tier, int poseNum){
 		return "tier-" + tier.getNum()+ ".pos"+ poseNum+".y";
 	}
-	private String parsePathZ(Tiers tier, int poseNum){
+	private static String parsePathZ(Tiers tier, int poseNum){
 		return "tier-" + tier.getNum()+ ".pos"+ poseNum+".z";
 	}
 }

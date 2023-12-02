@@ -4,7 +4,7 @@ package me.leopold95.shootingallery.commands;
 import me.leopold95.shootingallery.core.engine.ShootingGame;
 import me.leopold95.shootingallery.commands.constants.Commands;
 import me.leopold95.shootingallery.commands.handlers.TiersHandler;
-import me.leopold95.shootingallery.core.Tiers;
+import me.leopold95.shootingallery.core.engine.tiers.Tiers;
 import me.leopold95.shootingallery.core.Utils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

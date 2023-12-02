@@ -2,8 +2,8 @@ package me.leopold95.shootingallery.commands.handlers;
 
 import me.leopold95.shootingallery.commands.constants.Commands;
 import me.leopold95.shootingallery.core.engine.Target;
-import me.leopold95.shootingallery.core.engine.TiersLocationManager;
-import me.leopold95.shootingallery.core.Tiers;
+import me.leopold95.shootingallery.core.engine.tiers.TiersLocationManager;
+import me.leopold95.shootingallery.core.engine.tiers.Tiers;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
@@ -31,7 +31,7 @@ public class TiersHandler {
 			case Commands.TIER_SPAWN:
 				Target t = new Target();
 				Vector coords = tpm.getCoords(tier, 1);
-				t.spawn(new Location(player.getWorld(), coords.getX() + 0.5, coords.getY(), coords.getZ() + 0.5), tier);
+				t.spawn(new Location(player.getWorld(), coords.getX(), coords.getY(), coords.getZ()), tier);
 				break;
 		}
 	}
